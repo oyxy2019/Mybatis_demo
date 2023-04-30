@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    username: oyxy
+    password: 2084
+    #?serverTimezone=UTC解决时区的报错
+    url: jdbc:mysql://132.145.83.8:3306/watermanagement?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.example.pojo
